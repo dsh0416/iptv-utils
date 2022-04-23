@@ -1,0 +1,17 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    concurrent-ruby (1.1.10)
+    dry-cli (0.6.0)
+      concurrent-ruby (~> 1.0)
+    json (2.6.1)
+
+PLATFORMS
+  arm64-darwin-21
+
+DEPENDENCIES
+  dry-cli (~> 0.6.0)
+  json (~> 2.6.1)
+
+BUNDLED WITH
+   2.2.33
