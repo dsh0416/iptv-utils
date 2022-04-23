@@ -73,7 +73,16 @@ module IPTV
         stop_time = Time.parse(stop)
 
         puts "正在录像 #{channel["name"]} #{start_time.to_s} 到 #{stop_time.to_s} 保存到文件 #{filename}"
-        system("ffmpeg", "-i", "#{channel["url"]}?playseek=#{start_time.to_iptv}-#{stop_time.to_iptv}", "-vcodec", "copy", filename)
+        system(
+          "ffmpeg",
+          "-i",
+          "#{channel["url"]}?playseek=#{start_time.to_iptv}-#{stop_time.to_iptv}",
+          "-c:v",
+          "copy",
+          "-c:a",
+          "aac",
+          filename
+        )
       end
     end
 
