@@ -75,7 +75,6 @@ module IPTV
         puts "正在录像 #{channel["name"]} #{start_time.to_s} 到 #{stop_time.to_s} 保存到文件 #{filename}"
         system(
           "ffmpeg",
-          "-re",
           "-i",
           "#{channel["url"]}?playseek=#{start_time.to_iptv}-#{stop_time.to_iptv}",
           "-c:v",
