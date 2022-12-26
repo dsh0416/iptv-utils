@@ -4,7 +4,7 @@ GEM
     concurrent-ruby (1.1.10)
     dry-cli (0.6.0)
       concurrent-ruby (~> 1.0)
-    json (2.6.1)
+    json (2.6.2)
 
 PLATFORMS
   arm64-darwin-21
